@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: zerodha-login-app
+    env: python
+    buildCommand: ""
+    startCommand: "python app.py"
+    envVars:
+      - key: API_KEY
+        value: your_api_key
+      - key: API_SECRET
+        value: your_api_secret
